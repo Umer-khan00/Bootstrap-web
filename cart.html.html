@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a995457d30.js" crossorigin="anonymous"></script>
+    <style>
+        .cart{
+            position: relative;
+            border: 1px solid;
+            top: 100%;
+            right: 2rem;
+            padding: 1rem;
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow);
+            width: 30rem;
+            background: #fff;
+            margin: 100px;
+
+        }
+
+        .box{
+            border: 0px solid red;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+
+        }
+
+        .cart .box .img{
+            height: 5rem;
+        }
+
+        .cart .box1 .fa-trash{
+            font-size: 2rem;
+            position:absolute;
+            top: 50%;
+            right: 2rem;
+            cursor: pointer;
+            color: var(--light-color);
+            transform: translatey(50%);
+
+        }
+
+        .cart .box .fa-trash:hover{
+            color: rgb(255, 0, 51);
+        }
+
+        .cart .content h1{
+            text-align: center;
+        }
+
+        .cart .content span{
+
+        }
+
+        .cart .total{
+            font-size: 1.5rem;
+            text-align: center;
+
+        }
+
+        .btn7{
+           margin-top: 1rem;
+           display: inline-block;
+           padding: 0.8rem;
+           border-radius: 8rem;
+           text-align: center;
+            text-decoration: none;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            border: 2px solid rgb(255, 0, 0);
+            
+        }
+
+        .btn7:hover{
+            color: rgb(255, 0, 0);
+            transition: 1.5s;
+        }
+    </style>
+</head>
+<body>
+    
+
+<div class="cart">
+    <div class="box1">
+        <i class="fa fa-trash"></i>
+        <img src="./img01.jpg" >
+        <div class="content">
+            <h3>Photo Frames</h3>
+            <span class="price">$24.99/-</span>
+            <span class="quantity">Qty : 1</span>
+        </div>
+    </div>
+
+    <div class="box1">
+        <i class="fa fa-trash"></i>
+        <img src="./img02.jpg" >
+        <div class="content">
+            <h3>Photo Frames</h3>
+            <span class="price">$24.99/-</span>
+            <span class="quantity">Qty : 1</span>
+        </div>
+    </div>
+    
+
+    <div class="box">
+        <i class="fa fa-trash"></i>
+        <img src="./img03.jpg" >
+        <div class="content">
+            <h3>Photo Frames</h3>
+            <span class="price">$24.99/-</span>
+            <span class="quantity">Qty : 1</span>
+        </div>
+    </div>
+    <div class="total">Total : $74.97/-</div>
+    <a href="#" class="btn7">Checkout</a>
+</div>
+</body>
+</html>

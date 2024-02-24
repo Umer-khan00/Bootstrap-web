@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+
+   
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #000000;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.remove-button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkout-button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkout-button:hover, .remove-button:hover {
+    background-color: #ff0000;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Add media queries for responsiveness as needed */
+
+</style>
+</head>
+<body>
+
+
+
+
+
+    
+
+    <!-- Cart Page Section -->
+    <section class="cart-page">
+        <h2>Your Cart</h2>
+
+        <div class="cart-item">
+            <img src="./abstract/1 (4).jpg" alt="Product 1">
+            <div class="item-details">
+                <p class="product-title">Abstrat Frames</p>
+                <p class="product-quantity">Quantity: 2</p>
+                <p class="product-price">$24.99 each</p>
+            </div>
+            <button class="remove-button" onclick="removeItem(this)">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </div>
+
+        <div class="cart-item">
+            <img src="./islamic frames/1 (11).jpg" alt="Product 2">
+            <div class="item-details">
+                <p class="product-title">Islamic frames</p>
+                <p class="product-quantity">Quantity: 1</p>
+                <p class="product-price">$19.99 each</p>
+            </div>
+            <button class="remove-button" onclick="removeItem(this)">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </div>
+
+        <div class="cart-summary">
+            <p>Total: $69.97</p>
+        </div>
+
+        <a href="./checkout.html"><button class="checkout-button">Proceed to Checkout</button></a>
+    </section>
+
+    <script>
+        function removeItem(button) {
+            button.parentElement.remove();
+        }
+    </script>
+
+</body>
+</html>
